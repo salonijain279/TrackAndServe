@@ -12,4 +12,3 @@ RUN python -m src.train --output /app/artifacts/model.joblib --disable-mlflow
 EXPOSE 8000
 
 CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8000"]
-

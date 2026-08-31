@@ -33,4 +33,3 @@ def predict(request: PredictionRequest) -> dict:
         return predict_records(bundle, request.records)
     except ValueError as error:
         raise HTTPException(status_code=422, detail=str(error)) from error
-

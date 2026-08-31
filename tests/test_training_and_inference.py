@@ -24,4 +24,3 @@ def test_batch_inference_returns_probabilities(bundle: dict) -> None:
 def test_invalid_feature_count_is_rejected(bundle: dict) -> None:
     with pytest.raises(ValueError):
         predict_records(bundle, [[1.0, 2.0]])
-

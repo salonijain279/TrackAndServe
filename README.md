@@ -48,4 +48,3 @@ docker run -p 8000:8000 mlflow-model-api
 ## Origin
 
 Rebuilt from MSBA MLflow and containerization labs. The implementation uses the public scikit-learn Wine dataset and contains no credentials or classroom answer exports.
-

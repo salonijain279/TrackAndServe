@@ -22,4 +22,3 @@ def predict_records(bundle: dict, records: list[list[float]]) -> dict:
     probabilities = model.predict_proba(matrix)
     labels = [bundle["target_names"][int(class_id)] for class_id in class_ids]
     return {"predictions": labels, "probabilities": probabilities.tolist()}
-
