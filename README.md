@@ -4,9 +4,14 @@ An end-to-end MLOps project connecting model experimentation with an actual serv
 
 ## Pipeline
 
-```text
-scikit-learn dataset -> train/validation split -> Gradient Boosting -> MLflow metrics
-                    -> versioned model bundle -> FastAPI contract -> Docker image
+```mermaid
+flowchart LR
+    A[scikit-learn dataset] --> B[Train/validation split]
+    B --> C[Gradient Boosting]
+    C --> D[MLflow metrics tracking]
+    D --> E[Versioned model bundle]
+    E --> F[FastAPI contract]
+    F --> G[Docker image]
 ```
 
 ## Design priorities
