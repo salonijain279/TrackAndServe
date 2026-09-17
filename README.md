@@ -1,15 +1,15 @@
 # MLflow Experiment Tracking and Containerized Model Serving
 
-I built this end-to-end MLOps project to connect model experimentation with an actual serving contract. The workflow trains a reproducible classifier, records the run with MLflow, packages the selected model, and serves predictions through a Dockerized FastAPI application.
+An end-to-end MLOps project connecting model experimentation with an actual serving contract. The workflow trains a reproducible classifier, records the run with MLflow, packages the selected model, and serves predictions through a Dockerized FastAPI application.
 
-## What I built
+## Pipeline
 
 ```text
 scikit-learn dataset -> train/validation split -> Gradient Boosting -> MLflow metrics
                     -> versioned model bundle -> FastAPI contract -> Docker image
 ```
 
-## What I focused on
+## Design priorities
 
 - Deterministic split and documented model configuration
 - Metrics persisted both in the model bundle and MLflow
