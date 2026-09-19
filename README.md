@@ -1,4 +1,4 @@
-# MLflow Model Serving API
+# TrackAndServe: MLflow Model Serving API
 
 An end-to-end MLOps project connecting model experimentation with an actual serving contract. The workflow trains a reproducible classifier, records the run with MLflow, packages the selected model, and serves predictions through a Dockerized FastAPI application.
 
